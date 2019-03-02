@@ -3,9 +3,13 @@
 //
 // ========================================================================
 
+@logo-font-size:                                @global-large-font-size;
+@logo-color:                                    @global-primary-background;
+@logo-hover-color:                              @global-primary-background;
 
 // Variables
 // ========================================================================
+
 
 
 // Panel
@@ -32,7 +36,11 @@
 // Logo
 // ========================================================================
 
-.hook-logo() {}
+.hook-logo() {
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 700;
+}
 
 .hook-logo-hover() {}
 

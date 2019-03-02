@@ -7,20 +7,37 @@
 // Variables
 // ========================================================================
 
-@navbar-nav-item-font-size:                     @global-small-font-size;
+@navbar-background:                             @global-secondary-background;
 
-@navbar-dropdown-margin:                        15px;
-@navbar-dropdown-padding:                       25px;
+@navbar-nav-item-height:                        80px;
+@navbar-nav-item-padding-horizontal:            15px;
+@navbar-nav-item-color:                         #fff;
+@navbar-nav-item-font-size:                     18px;
+@navbar-nav-item-hover-color:                   @global-primary-background;
+@navbar-nav-item-onclick-color:                 @global-primary-background;
+@navbar-nav-item-active-color:                  @global-primary-background;
+
+@navbar-item-color:                             #fff;
+
+@navbar-toggle-color:                           #fff;
+@navbar-toggle-hover-color:                     @global-primary-background;
+
+@navbar-dropdown-margin:                        0;
+@navbar-dropdown-padding:                       15px;
 @navbar-dropdown-background:                    @global-background;
 @navbar-dropdown-grid-gutter-horizontal:        (@navbar-dropdown-padding * 2);
+
+@navbar-dropdown-nav-item-color:                @global-color;
+@navbar-dropdown-nav-item-hover-color:          @global-primary-background;
+@navbar-dropdown-nav-item-active-color:         @global-primary-background;
 
 //
 // New
 //
 
-@navbar-nav-item-text-transform:                uppercase;
+@navbar-nav-item-text-transform:                none;
 
-@navbar-dropdown-nav-font-size:                 @global-small-font-size;
+@navbar-dropdown-nav-font-size:                 14px;
 
 @navbar-dropdown-box-shadow:                    0 5px 12px rgba(0,0,0,0.15);
 
@@ -46,6 +63,7 @@
 // ========================================================================
 
 .hook-navbar-nav-item() {
+    font-weight: 700;
     text-transform: @navbar-nav-item-text-transform;
     transition: 0.1s ease-in-out;
     transition-property: color, background-color;

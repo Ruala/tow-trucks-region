@@ -1,0 +1,25 @@
+.slogan {
+  font-size: 10px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.map {
+  height: calc(100vh - 80px);
+  min-height: 400px;
+}
+
+.price {
+
+  &__icon {
+    font-size: 56px;
+    color: @global-primary-background;
+  }
+
+  &:hover {
+
+    .price__icon {
+      animation: scaleVanish 0.5s ease;
+    }
+  }
+}

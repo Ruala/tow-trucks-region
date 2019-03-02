@@ -3,6 +3,9 @@
 //
 // ========================================================================
 
+@divider-small-width:                           50px;
+@divider-small-border-width:                    @global-border-width;
+@divider-small-border:                          @global-border;
 
 // Variables
 // ========================================================================
@@ -23,7 +26,12 @@
 // Small
 // ========================================================================
 
-.hook-divider-small() {}
+.hook-divider-small() {
+  border-top: none;
+  height: 3px;
+  background-image: linear-gradient(-45deg, transparent 10%, #ffc326 10%, #ffc326 50%, transparent 50%, transparent 60%, #ffc326 60%, #ffc326);
+  background-size: 7px 7px;
+}
 
 
 // Miscellaneous
