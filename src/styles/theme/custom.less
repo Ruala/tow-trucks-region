@@ -1,3 +1,28 @@
+.uk-divider-small {
+  margin-bottom: 30px;
+}
+
+.uk-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uk-light {
+
+  .uk-logo {
+    color: @global-primary-background;
+
+    &:hover {
+      color: @global-primary-background;
+    }
+  }
+
+  .feedbacks__title {
+    color: @global-primary-background;
+  }
+}
+
 .slogan {
   font-size: 10px;
   font-weight: normal;
@@ -23,3 +48,128 @@
     }
   }
 }
+
+.teaser {
+
+  &__icon {
+    font-size: 60px;
+  }
+}
+
+.userpic {
+  display: inline-block;
+  border-radius: 50%;
+  border: 4px solid @global-primary-background;
+}
+
+.feedbacks__slider {
+
+  > *:focus {
+    outline: none;
+  }
+
+  .uk-slider-items {
+
+    li {
+      padding: 0 40px;
+    }
+  }
+}
+
+.services-list {
+
+  .uk-accordion-title {
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid @global-primary-background;
+    transition: all 0.2s ease-in-out;
+
+    &::after {
+      content: '\f067';
+      font-family: "Font Awesome 5 Free";
+      background-image: none;
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: @global-primary-background;
+    }
+  }
+
+  .uk-open > .uk-accordion-title {
+    color: #fff;
+    background-color: @global-primary-background;
+
+    &::after {
+      content: '\f068';
+    }
+  }
+
+  .uk-accordion-content {
+    padding: 20px;
+    margin-top: 0;
+  }
+
+}
+
+.articles-slider {
+
+  .uk-card {
+
+    &:hover {
+
+      .uk-card-media-top a::before {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .uk-card-media-top a {
+    display: block;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #222;
+      opacity: 0;
+      transition: all 0.2s linear;
+    }
+  }
+
+  .uk-card-title a {
+    color: @global-color;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: @global-primary-background;
+      text-decoration: none;
+    }
+  }
+
+  .uk-card-body {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      height: 5px;
+      left: 0;
+      right: 0;
+      background-color: #ffc326;
+      background-image: linear-gradient(-45deg, #232323 15%, #ffc326 15%, #ffc326 50%, #232323 50%, #232323 65%, #ffc326 65%, #ffc326);
+      background-size: 8px 8px;
+    }
+  }
+}
+
+
+
+

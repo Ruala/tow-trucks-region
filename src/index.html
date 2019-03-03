@@ -116,7 +116,7 @@
             <div class="uk-section">
                 <div class="uk-container">
                     <div class="uk-flex-middle" uk-grid>
-                        <div class="uk-width-1-2 uk-width-3-5@l">
+                        <div class="uk-width-1-2@s uk-width-3-5@l">
                             <div class="uk-text-center">
                                 <img src="images/truck-top.png" alt="truck">
                             </div>
@@ -138,9 +138,284 @@
 
 
 
-            
-            
-            <div class="uk-section uk-light uk-background-fixed uk-background-center-center uk-position-relative" style="background-image: url(images/bg_prices.jpg);">
+            <!-- Calculator -->
+            <div class="uk-section uk-background-primary uk-background-fixed uk-background-cover uk-position-relative" style="background-image: url(images/bg_calc.jpg);">
+                <div class="uk-overlay-default uk-position-cover"></div>
+                <div class="uk-container uk-position-relative">
+                    <div class="uk-text-center">
+                        <h2>Заголовок h2</h2>
+                        <hr class="uk-divider-small">
+                    </div>
+                    <form>
+                        <div class="uk-text-center uk-margin-medium-bottom" uk-switcher="connect: #type-list; animation: uk-animation-fade; toggle: > *">
+                            <button class="uk-button uk-button-primary" type="button">Мотоцикл</button>
+                            <button class="uk-button uk-button-primary" type="button">Легковой автомобиль</button>
+                            <button class="uk-button uk-button-primary" type="button">Внедорожник</button>
+                            <button class="uk-button uk-button-primary" type="button">Коммерческий транспорт</button>
+
+                        </div>
+
+                        <ul id="type-list" class="uk-switcher">
+                            <li>
+                                <div class="uk-child-width-expand@s uk-margin-small" uk-grid>
+                                    <div>
+                                        <div class="uk-margin">
+                                            <h5 class="uk-text-bold uk-margin-small">Откуда</h5>
+                                            <div class="uk-margin-small">
+                                                <input class="uk-input" type="text" placeholder="From">
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <h5 class="uk-text-bold uk-margin-small">Куда</h5>
+                                            <div class="uk-margin-small">
+                                                <input class="uk-input" type="text" placeholder="To">
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <h5 class="uk-text-bold uk-margin-small">Ваш телефон</h5>
+                                            <div class="uk-margin-small">
+                                                <input class="uk-input" type="text" name="phone" placeholder="+7 ( ___ ) ___ - __ - __">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-width-1-3@s">
+                                        <div class="uk-margin">
+                                            <h5 class="uk-text-bold uk-margin-small">Сколько колес заблокировано?</h5>
+                                            <div class="uk-margin-small uk-grid-small uk-child-width-auto uk-grid">
+                                                <label><input class="uk-radio" type="radio" name="radio" checked> 0</label>
+                                                <label><input class="uk-radio" type="radio" name="radio"> 1</label>
+                                                <label><input class="uk-radio" type="radio" name="radio"> 2</label>
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin-medium-bottom">
+                                            <div class="uk-margin-small uk-text-bold">
+                                                <label><input class="uk-checkbox" type="checkbox"> Руль заблокирован</label>
+                                            </div>
+                                            <div class="uk-margin-small uk-text-bold">
+                                                <label><input class="uk-checkbox" type="checkbox"> КПП заблокирована</label>
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <div class="uk-margin-small uk-text-bold">
+                                                <label><input class="uk-checkbox" type="checkbox"> <span>Скидка 10%</span> по предварительному заказу</label>
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <div class="uk-margin-small uk-flex-bottom" uk-grid>
+                                                <div>
+                                                    <h4 class="uk-text-bold uk-margin-remove">Сумма заказа:</h4>
+                                                </div>
+                                                <div>
+                                                    <div class="uk-text-bold uk-text-large">3 000 руб.</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="uk-text-small uk-text-muted">* Окончательную стоимость перевозки уточняйте у диспетчеров</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-child-width-expand@s uk-margin-small" uk-grid>
+                                    <div>
+                                        <div class="uk-margin">
+                                            <h5 class="uk-text-bold uk-margin-small">Откуда</h5>
+                                            <div class="uk-margin-small">
+                                                <input class="uk-input" type="text" placeholder="From">
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <h5 class="uk-text-bold uk-margin-small">Куда</h5>
+                                            <div class="uk-margin-small">
+                                                <input class="uk-input" type="text" placeholder="To">
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <h5 class="uk-text-bold uk-margin-small">Ваш телефон</h5>
+                                            <div class="uk-margin-small">
+                                                <input class="uk-input" type="text" name="phone" placeholder="+7 ( ___ ) ___ - __ - __">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-width-1-3@s">
+                                        <div class="uk-margin">
+                                            <h5 class="uk-text-bold uk-margin-small">Сколько колес заблокировано?</h5>
+                                            <div class="uk-margin-small uk-grid-small uk-child-width-auto uk-grid">
+                                                <label><input class="uk-radio" type="radio" name="radio2" checked> 0</label>
+                                                <label><input class="uk-radio" type="radio" name="radio2"> 1</label>
+                                                <label><input class="uk-radio" type="radio" name="radio2"> 2</label>
+                                                <label><input class="uk-radio" type="radio" name="radio2"> 3</label>
+                                                <label><input class="uk-radio" type="radio" name="radio2"> 4</label>
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin-medium-bottom">
+                                            <div class="uk-margin-small uk-text-bold">
+                                                <label><input class="uk-checkbox" type="checkbox"> Руль заблокирован</label>
+                                            </div>
+                                            <div class="uk-margin-small uk-text-bold">
+                                                <label><input class="uk-checkbox" type="checkbox"> КПП заблокирована</label>
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <div class="uk-margin-small uk-text-bold">
+                                                <label><input class="uk-checkbox" type="checkbox"> <span>Скидка 10%</span> по предварительному заказу</label>
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <div class="uk-margin-small uk-flex-bottom" uk-grid>
+                                                <div>
+                                                    <h4 class="uk-text-bold uk-margin-remove">Сумма заказа:</h4>
+                                                </div>
+                                                <div>
+                                                    <div class="uk-text-bold uk-text-large">3 000 руб.</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="uk-text-small uk-text-muted">* Окончательную стоимость перевозки уточняйте у диспетчеров</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-child-width-expand@s uk-margin-small" uk-grid>
+                                    <div>
+                                        <div class="uk-margin">
+                                            <h5 class="uk-text-bold uk-margin-small">Откуда</h5>
+                                            <div class="uk-margin-small">
+                                                <input class="uk-input" type="text" placeholder="From">
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <h5 class="uk-text-bold uk-margin-small">Куда</h5>
+                                            <div class="uk-margin-small">
+                                                <input class="uk-input" type="text" placeholder="To">
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <h5 class="uk-text-bold uk-margin-small">Ваш телефон</h5>
+                                            <div class="uk-margin-small">
+                                                <input class="uk-input" type="text" name="phone" placeholder="+7 ( ___ ) ___ - __ - __">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-width-1-3@s">
+                                        <div class="uk-margin">
+                                            <h5 class="uk-text-bold uk-margin-small">Сколько колес заблокировано?</h5>
+                                            <div class="uk-margin-small uk-grid-small uk-child-width-auto uk-grid">
+                                                <label><input class="uk-radio" type="radio" name="radio3" checked> 0</label>
+                                                <label><input class="uk-radio" type="radio" name="radio3"> 1</label>
+                                                <label><input class="uk-radio" type="radio" name="radio3"> 2</label>
+                                                <label><input class="uk-radio" type="radio" name="radio3"> 3</label>
+                                                <label><input class="uk-radio" type="radio" name="radio3"> 4</label>
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin-medium-bottom">
+                                            <div class="uk-margin-small uk-text-bold">
+                                                <label><input class="uk-checkbox" type="checkbox"> Руль заблокирован</label>
+                                            </div>
+                                            <div class="uk-margin-small uk-text-bold">
+                                                <label><input class="uk-checkbox" type="checkbox"> КПП заблокирована</label>
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <div class="uk-margin-small uk-text-bold">
+                                                <label><input class="uk-checkbox" type="checkbox"> <span>Скидка 10%</span> по предварительному заказу</label>
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <div class="uk-margin-small uk-flex-bottom" uk-grid>
+                                                <div>
+                                                    <h4 class="uk-text-bold uk-margin-remove">Сумма заказа:</h4>
+                                                </div>
+                                                <div>
+                                                    <div class="uk-text-bold uk-text-large">3 000 руб.</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="uk-text-small uk-text-muted">* Окончательную стоимость перевозки уточняйте у диспетчеров</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-child-width-expand@s uk-margin-small" uk-grid>
+                                    <div>
+                                        <div class="uk-margin">
+                                            <h5 class="uk-text-bold uk-margin-small">Откуда</h5>
+                                            <div class="uk-margin-small">
+                                                <input class="uk-input" type="text" placeholder="From">
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <h5 class="uk-text-bold uk-margin-small">Куда</h5>
+                                            <div class="uk-margin-small">
+                                                <input class="uk-input" type="text" placeholder="To">
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <h5 class="uk-text-bold uk-margin-small">Ваш телефон</h5>
+                                            <div class="uk-margin-small">
+                                                <input class="uk-input" type="text" name="phone" placeholder="+7 ( ___ ) ___ - __ - __">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-width-1-3@s">
+                                        <div class="uk-margin">
+                                            <h5 class="uk-text-bold uk-margin-small">Сколько колес заблокировано?</h5>
+                                            <div class="uk-margin-small uk-grid-small uk-child-width-auto uk-grid">
+                                                <label><input class="uk-radio" type="radio" name="radio4" checked> 0</label>
+                                                <label><input class="uk-radio" type="radio" name="radio4"> 1</label>
+                                                <label><input class="uk-radio" type="radio" name="radio4"> 2</label>
+                                                <label><input class="uk-radio" type="radio" name="radio4"> 3</label>
+                                                <label><input class="uk-radio" type="radio" name="radio4"> 4</label>
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin-medium-bottom">
+                                            <div class="uk-margin-small uk-text-bold">
+                                                <label><input class="uk-checkbox" type="checkbox"> Руль заблокирован</label>
+                                            </div>
+                                            <div class="uk-margin-small uk-text-bold">
+                                                <label><input class="uk-checkbox" type="checkbox"> КПП заблокирована</label>
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <div class="uk-margin-small uk-text-bold">
+                                                <label><input class="uk-checkbox" type="checkbox"> <span>Скидка 10%</span> по предварительному заказу</label>
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <div class="uk-margin-small uk-flex-bottom" uk-grid>
+                                                <div>
+                                                    <h4 class="uk-text-bold uk-margin-remove">Сумма заказа:</h4>
+                                                </div>
+                                                <div>
+                                                    <div class="uk-text-bold uk-text-large">3 000 руб.</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="uk-text-small uk-text-muted">* Окончательную стоимость перевозки уточняйте у диспетчеров</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="uk-margin uk-text-center">
+                            <a href="#form-call-reverse" class="uk-button uk-button-secondary" uk-toggle>Заказать</a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+
+
+            <!-- Prices -->
+            <div class="uk-section uk-light uk-background-secondary uk-background-fixed uk-background-center-center uk-position-relative" style="background-image: url(images/bg_prices.jpg);">
                 <div class="uk-overlay-primary uk-position-cover"></div>
                 <div class="uk-container uk-position-relative">
                     <div class="uk-child-width-1-5@m uk-grid-small uk-text-center" uk-grid>
@@ -194,57 +469,516 @@
                 </div>
             </div>
 
+            <!-- Information text -->
+            <div class="uk-section uk-text-center">
+                <div class="uk-container">
+                    <h2>Заголовок h2</h2>
+                    <hr class="uk-divider-small">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
 
+                    <div class="uk-child-width-1-3@m" uk-grid uk-height-match="target: > div > .uk-card">
+                        <div>
+                            <div class="teaser uk-card uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                <div>
+                                    <div class="teaser__icon">
+                                        <i class="fas fa-hand-holding-usd"></i>
+                                    </div>
+                                    <h4 class="uk-margin">Дешево</h4>
+                                    <p>Стоимость эвакуации автомобиля от 1180р.</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="uk-button uk-button-primary">Рассчитать онлайн</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="teaser uk-card uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                <div>
+                                    <div class="teaser__icon">
+                                        <i class="fas fa-shipping-fast"></i>
+                                    </div>
+                                    <h4 class="uk-margin">Быстро</h4>
+                                    <p>Время подачи в любой район Москвы от 20 мин</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="uk-button uk-button-primary">Найти ближайший эвакуатор</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="teaser uk-card uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                <div>
+                                    <div class="teaser__icon">
+                                        <i class="fab fa-cloudscale"></i>
+                                    </div>
+                                    <h4 class="uk-margin">Круглосуточно</h4>
+                                    <p>Работаем 24 часа в сутки 7 дней в неделю</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="uk-button uk-button-primary">Заказать эвакуатор</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Feedbacks -->
+            <div class="feedbacks uk-section uk-light uk-background-secondary uk-background-cover uk-position-relative" style="background-image: url(images/bg_feedbacks.jpg);">
+                <div class="uk-overlay-primary uk-position-cover"></div>
+                <div class="uk-container uk-position-relative">
+                    <div class="feedbacks__slider uk-text-center" uk-slider>
+
+                        <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+
+                            <ul class="uk-child-width-1-1 uk-slider-items">
+                                <li>
+                                    <blockquote>
+                                        <div class="uk-margin-medium-bottom">
+                                            <div class="userpic">
+                                                <img src="images/userpic.jpg" class="uk-border-circle" alt="">
+                                            </div>
+                                        </div>
+                                        <p class="uk-margin-bottom">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                            officia deserunt mollit anim id est laborum.
+                                        </p>
+                                        <footer>
+                                            <h4 class="feedbacks__title uk-text-uppercase uk-margin-remove">Name Surname</h4>
+                                            <div>Manager</div>
+                                        </footer>
+                                    </blockquote>
+                                </li>
+                                <li>
+                                    <blockquote>
+                                        <div class="uk-margin-medium-bottom">
+                                            <div class="userpic">
+                                                <img src="images/userpic.jpg" class="uk-border-circle" alt="">
+                                            </div>
+                                        </div>
+                                        <p class="uk-margin-bottom">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                            officia deserunt mollit anim id est laborum.
+                                        </p>
+                                        <footer>
+                                            <h4 class="feedbacks__title uk-text-uppercase uk-margin-remove">Name Surname</h4>
+                                            <div>Manager</div>
+                                        </footer>
+                                    </blockquote>
+                                </li>
+                                <li>
+                                    <blockquote>
+                                        <div class="uk-margin-medium-bottom">
+                                            <div class="userpic">
+                                                <img src="images/userpic.jpg" class="uk-border-circle" alt="">
+                                            </div>
+                                        </div>
+                                        <p class="uk-margin-bottom">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                            officia deserunt mollit anim id est laborum.
+                                        </p>
+                                        <footer>
+                                            <h4 class="feedbacks__title uk-text-uppercase uk-margin-remove">Name Surname</h4>
+                                            <div>Manager</div>
+                                        </footer>
+                                    </blockquote>
+                                </li>
+                                <li>
+                                    <blockquote>
+                                        <div class="uk-margin-medium-bottom">
+                                            <div class="userpic">
+                                                <img src="images/userpic.jpg" class="uk-border-circle" alt="">
+                                            </div>
+                                        </div>
+                                        <p class="uk-margin-bottom">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                            officia deserunt mollit anim id est laborum.
+                                        </p>
+                                        <footer>
+                                            <h4 class="feedbacks__title uk-text-uppercase uk-margin-remove">Name Surname</h4>
+                                            <div>Manager</div>
+                                        </footer>
+                                    </blockquote>
+                                </li>
+                                <li>
+                                    <blockquote>
+                                        <div class="uk-margin-medium-bottom">
+                                            <div class="userpic">
+                                                <img src="images/userpic.jpg" class="uk-border-circle" alt="">
+                                            </div>
+                                        </div>
+                                        <p class="uk-margin-bottom">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                            officia deserunt mollit anim id est laborum.
+                                        </p>
+                                        <footer>
+                                            <h4 class="feedbacks__title uk-text-uppercase uk-margin-remove">Name Surname</h4>
+                                            <div>Manager</div>
+                                        </footer>
+                                    </blockquote>
+                                </li>
+                            </ul>
+
+                            <div class="uk-visible@s">
+                                <a class="uk-position-center-left uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                <a class="uk-position-center-right uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                            </div>
+
+                        </div>
+
+                        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popular services -->
+            <div class="uk-section">
+                <div class="uk-container">
+                    <div uk-grid>
+                        <div class="uk-width-1-2@s uk-width-3-5@l">
+                            <div class="uk-text-center">
+                                <img src="images/truck-top.png" alt="truck">
+                            </div>
+                        </div>
+                        <div class="uk-width-expand">
+                            <h2>Заголовок h2</h2>
+                            <hr class="uk-divider-small">
+                            <ul class="services-list" uk-accordion>
+                                <li>
+                                    <a class="uk-accordion-title" href="#">Item 1</a>
+                                    <div class="uk-accordion-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href="#">Item 2</a>
+                                    <div class="uk-accordion-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                            deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href="#">Item 3</a>
+                                    <div class="uk-accordion-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                            deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href="#">Item 3</a>
+                                    <div class="uk-accordion-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                            deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Articles -->
+            <div class="uk-section uk-background-muted uk-text-center">
+                <div class="uk-container">
+                    <h2>Заголовок h2</h2>
+                    <hr class="uk-divider-small">
+
+                    <div class="articles-slider uk-margin-medium-bottom" uk-slider>
+
+                        <div class="uk-position-relative uk-visible-toggle">
+
+                            <div class="uk-slider-container">
+                                <ul class="uk-margin uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid uk-height-match="target: .uk-card">
+                                    <li>
+                                        <div class="uk-child-width-1-1 uk-card uk-card-default uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                            <div>
+                                                <div class="uk-card-media-top">
+                                                    <a href="#">
+                                                        <img src="images/article_1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="uk-card-body">
+                                                    <h3 class="uk-card-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt. Lorem ipsum dolor sit amet,
+                                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="uk-card-footer">
+                                                <p class="uk-text-meta uk-text-uppercase uk-margin-remove"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                                <div class="uk-text-primary">Name Surname</div>
+                                                
+                                                <a href="#" class="uk-button uk-button-text">Read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-child-width-1-1 uk-card uk-card-default uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                            <div>
+                                                <div class="uk-card-media-top">
+                                                    <a href="#">
+                                                        <img src="images/article_2.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="uk-card-body">
+                                                    <h3 class="uk-card-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="uk-card-footer">
+                                                <p class="uk-text-meta uk-text-uppercase uk-margin-remove"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                                <div class="uk-text-primary">Name Surname</div>
+
+                                                <a href="#" class="uk-button uk-button-text">Read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-child-width-1-1 uk-card uk-card-default uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                            <div>
+                                                <div class="uk-card-media-top">
+                                                    <a href="#">
+                                                        <img src="images/article_3.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="uk-card-body">
+                                                    <h3 class="uk-card-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt. Lorem ipsum dolor sit amet,
+                                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="uk-card-footer">
+                                                <p class="uk-text-meta uk-text-uppercase uk-margin-remove"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                                <div class="uk-text-primary">Name Surname</div>
+
+                                                <a href="#" class="uk-button uk-button-text">Read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-child-width-1-1 uk-card uk-card-default uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                            <div>
+                                                <div class="uk-card-media-top">
+                                                    <a href="#">
+                                                        <img src="images/article_1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="uk-card-body">
+                                                    <h3 class="uk-card-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt. Lorem ipsum dolor sit amet,
+                                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="uk-card-footer">
+                                                <p class="uk-text-meta uk-text-uppercase uk-margin-remove"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                                <div class="uk-text-primary">Name Surname</div>
+
+                                                <a href="#" class="uk-button uk-button-text">Read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-child-width-1-1 uk-card uk-card-default uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                            <div>
+                                                <div class="uk-card-media-top">
+                                                    <a href="#">
+                                                        <img src="images/article_2.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="uk-card-body">
+                                                    <h3 class="uk-card-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="uk-card-footer">
+                                                <p class="uk-text-meta uk-text-uppercase uk-margin-remove"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                                <div class="uk-text-primary">Name Surname</div>
+
+                                                <a href="#" class="uk-button uk-button-text">Read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-child-width-1-1 uk-card uk-card-default uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                            <div>
+                                                <div class="uk-card-media-top">
+                                                    <a href="#">
+                                                        <img src="images/article_3.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="uk-card-body">
+                                                    <h3 class="uk-card-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt. Lorem ipsum dolor sit amet,
+                                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="uk-card-footer">
+                                                <p class="uk-text-meta uk-text-uppercase uk-margin-remove"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                                                <div class="uk-text-primary">Name Surname</div>
+
+                                                <a href="#" class="uk-button uk-button-text">Read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <a class="uk-position-center-left uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+                        </div>
+
+                        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+                    </div>
+
+                    <div class="uk-margin uk-text-center">
+                        <a href="#" class="uk-button uk-button-primary">Ссылка на весь архив статей</a>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
         <!--Footer-->
         <footer class="footer uk-section uk-section-small uk-background-secondary uk-light">
             <div class="uk-container">
+                <div class="uk-margin uk-flex uk-flex-center uk-visible@s">
+
+                    <ul class="uk-subnav uk-margin-remove">
+                        <li class="uk-active"><a href="#">Главная</a></li>
+                        <li>
+                            <a href="#">Услуги эвакуатора</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#">Пункт меню</a></li>
+                                    <li><a href="#">Пункт меню</a></li>
+                                    <li><a href="#">Пункт меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                    <li><a href="#">Пункт меню</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Пункт меню</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#">Пункт меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Пункт меню</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#">Пункт меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Пункт меню</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#">Пункт меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Пункт меню</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="uk-text-center">
+                    <hr class="uk-divider-small uk-margin-small-bottom">
+                </div>
+
                 <div class="uk-child-width-auto@m uk-grid-small uk-flex-middle uk-flex-between" uk-grid>
                     <div>
-                        <div class="">© 2019 copyright Все права защищены</div>
-                    </div>
-                    <div class="uk-flex-last@l">
                         <!--logo-->
                         <a class="uk-logo" href="/">
-                            <img src="https://via.placeholder.com/300x60" alt="logo">
+                            <img src="images/logo.png" class="uk-margin-small-right" alt="logo">
+                            <span class="uk-flex uk-flex-column">
+                            <span>Tow Truck</span>
+                            <span class="slogan">Слоган - лаконичная фраза</span>
+                        </span>
                         </a>
                     </div>
-                    <div class="uk-width-expand@l uk-width-1-2@xl uk-flex uk-flex-center uk-visible@s">
-                        <ul class="uk-subnav">
-                            <li class="uk-active"><a href="#">Главная</a></li>
-                            <li>
-                                <a href="#">Услуги эвакуатора</a>
-                                <div uk-dropdown="mode: click;">
-                                    <ul class="uk-nav uk-dropdown-nav">
-                                        <li><a href="#">Пункт меню</a></li>
-                                        <li><a href="#">Пункт меню</a></li>
-                                        <li><a href="#">Пункт меню</a></li>
-                                        <li><a href="#">Пункт выпадающего меню</a></li>
-                                        <li><a href="#">Пункт меню</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">Пункт меню</a>
-                                <div uk-dropdown="mode: click;">
-                                    <ul class="uk-nav uk-dropdown-nav">
-                                        <li><a href="#">Пункт меню</a></li>
-                                        <li><a href="#">Пункт выпадающего меню</a></li>
-                                        <li><a href="#">Пункт выпадающего меню</a></li>
-                                        <li><a href="#">Пункт выпадающего меню</a></li>
-                                        <li><a href="#">Пункт выпадающего меню</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">Пункт меню</a>
-                            </li>
-                            <li>
-                                <a href="#">Пункт меню</a>
-                            </li>
-                        </ul>
+                    <div>
+                        <div class="uk-text-small">© 2019 copyright Все права защищены</div>
                     </div>
                 </div>
             </div>
