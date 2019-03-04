@@ -16,7 +16,7 @@
             <!--Header-->
             <header class="header uk-navbar-container" uk-sticky>
                 <nav uk-navbar>
-                    <div class="uk-navbar-center">
+                    <div class="uk-navbar-center uk-flex-between">
                         <div class="uk-navbar-center-left uk-visible@l">
                             <div>
                                 <!--Main menu left side-->
@@ -93,22 +93,21 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
 
-                    <!--<div class="uk-navbar-right uk-hidden@l">
-
-                        &lt;!&ndash;mobile menu toggle&ndash;&gt;
-                        <a href="#offcanvas-overlay" class="uk-navbar-toggle"
+                        <!--mobile menu toggle-->
+                        <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@l"
                            uk-navbar-toggle-icon uk-toggle>
                         </a>
-                    </div>-->
+                    </div>
                 </nav>
             </header>
 
             <!-- Map -->
-            <div class="uk-section uk-padding-remove">
+            <div class="uk-section uk-padding-remove uk-position-relative">
                 <div class="map-wrapper">
-                    <div id="map" class="map"></div>
+                    <div id="map" class="map" data-services='[{"title":"Адрес сервиса","coords":[55.7385,37.4821],"hintContent":"Сервис!"},{"title":"Адрес сервиса","coords":[55.7129,37.4855],"hintContent":"Сервис!"},{"title":"Адрес сервиса","coords":[55.7323,37.5447],"hintContent":"Сервис!"},{"title":"Адрес сервиса","coords":[55.7012,37.5568],"hintContent":"Сервис!"},{"title":"Адрес сервиса","coords":[55.7181,37.5732],"hintContent":"Сервис!"},{"title":"Адрес сервиса","coords":[55.7225,37.609],"hintContent":"Сервис!"},{"title":"Адрес сервиса","coords":[55.7193,37.6467],"hintContent":"Сервис!"},{"title":"Адрес сервиса","coords":[55.7025,37.6695],"hintContent":"Сервис!"},{"title":"Адрес сервиса","coords":[55.7378,37.6953],"hintContent":"Сервис!"},{"title":"Адрес сервиса","coords":[55.7253,37.7431],"hintContent":"Сервис!"}]'>
+                    </div>
+                    <a href="#form-call-reverse" class="uk-button uk-button-primary uk-position-small uk-position-bottom-center uk-hidden@l" uk-toggle>Заказать</a>
                 </div>
             </div>
 
@@ -116,7 +115,7 @@
             <div class="uk-section">
                 <div class="uk-container">
                     <div class="uk-flex-middle" uk-grid>
-                        <div class="uk-width-1-2@s uk-width-3-5@l">
+                        <div class="uk-width-1-2@m uk-width-3-5@l">
                             <div class="uk-text-center">
                                 <img src="images/truck-top.png" alt="truck">
                             </div>
@@ -135,9 +134,6 @@
                 </div>
             </div>
 
-
-
-
             <!-- Calculator -->
             <div class="uk-section uk-background-primary uk-background-fixed uk-background-cover uk-position-relative" style="background-image: url(images/bg_calc.jpg);">
                 <div class="uk-overlay-default uk-position-cover"></div>
@@ -147,7 +143,7 @@
                         <hr class="uk-divider-small">
                     </div>
                     <form>
-                        <div class="uk-text-center uk-margin-medium-bottom" uk-switcher="connect: #type-list; animation: uk-animation-fade; toggle: > *">
+                        <div class="uk-text-center uk-margin-medium-bottom" uk-switcher="connect: #type-list; animation: uk-animation-fade; toggle: > *" uk-margin>
                             <button class="uk-button uk-button-primary" type="button">Мотоцикл</button>
                             <button class="uk-button uk-button-primary" type="button">Легковой автомобиль</button>
                             <button class="uk-button uk-button-primary" type="button">Внедорожник</button>
@@ -157,7 +153,7 @@
 
                         <ul id="type-list" class="uk-switcher">
                             <li>
-                                <div class="uk-child-width-expand@s uk-margin-small" uk-grid>
+                                <div class="uk-child-width-expand@m uk-margin-small" uk-grid>
                                     <div>
                                         <div class="uk-margin">
                                             <h5 class="uk-text-bold uk-margin-small">Откуда</h5>
@@ -179,7 +175,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="uk-width-1-3@s">
+                                    <div class="uk-width-1-3@m">
                                         <div class="uk-margin">
                                             <h5 class="uk-text-bold uk-margin-small">Сколько колес заблокировано?</h5>
                                             <div class="uk-margin-small uk-grid-small uk-child-width-auto uk-grid">
@@ -217,7 +213,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="uk-child-width-expand@s uk-margin-small" uk-grid>
+                                <div class="uk-child-width-expand@m uk-margin-small" uk-grid>
                                     <div>
                                         <div class="uk-margin">
                                             <h5 class="uk-text-bold uk-margin-small">Откуда</h5>
@@ -239,7 +235,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="uk-width-1-3@s">
+                                    <div class="uk-width-1-3@m">
                                         <div class="uk-margin">
                                             <h5 class="uk-text-bold uk-margin-small">Сколько колес заблокировано?</h5>
                                             <div class="uk-margin-small uk-grid-small uk-child-width-auto uk-grid">
@@ -279,7 +275,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="uk-child-width-expand@s uk-margin-small" uk-grid>
+                                <div class="uk-child-width-expand@m uk-margin-small" uk-grid>
                                     <div>
                                         <div class="uk-margin">
                                             <h5 class="uk-text-bold uk-margin-small">Откуда</h5>
@@ -301,7 +297,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="uk-width-1-3@s">
+                                    <div class="uk-width-1-3@m">
                                         <div class="uk-margin">
                                             <h5 class="uk-text-bold uk-margin-small">Сколько колес заблокировано?</h5>
                                             <div class="uk-margin-small uk-grid-small uk-child-width-auto uk-grid">
@@ -341,7 +337,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="uk-child-width-expand@s uk-margin-small" uk-grid>
+                                <div class="uk-child-width-expand@m uk-margin-small" uk-grid>
                                     <div>
                                         <div class="uk-margin">
                                             <h5 class="uk-text-bold uk-margin-small">Откуда</h5>
@@ -363,7 +359,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="uk-width-1-3@s">
+                                    <div class="uk-width-1-3@m">
                                         <div class="uk-margin">
                                             <h5 class="uk-text-bold uk-margin-small">Сколько колес заблокировано?</h5>
                                             <div class="uk-margin-small uk-grid-small uk-child-width-auto uk-grid">
@@ -405,20 +401,18 @@
                         </ul>
 
                         <div class="uk-margin uk-text-center">
-                            <a href="#form-call-reverse" class="uk-button uk-button-secondary" uk-toggle>Заказать</a>
+                            <a href="#form-call-reverse" class="uk-button uk-button-primary" uk-toggle>Заказать</a>
                         </div>
                     </form>
 
                 </div>
             </div>
 
-
-
             <!-- Prices -->
             <div class="uk-section uk-light uk-background-secondary uk-background-fixed uk-background-center-center uk-position-relative" style="background-image: url(images/bg_prices.jpg);">
                 <div class="uk-overlay-primary uk-position-cover"></div>
                 <div class="uk-container uk-position-relative">
-                    <div class="uk-child-width-1-5@m uk-grid-small uk-text-center" uk-grid>
+                    <div class="uk-child-width-1-2@s uk-child-width-1-5@m uk-grid-small uk-text-center" uk-grid>
                         <div>
                             <div class="price">
                                 <div class="price__icon">
@@ -665,7 +659,7 @@
             <div class="uk-section">
                 <div class="uk-container">
                     <div uk-grid>
-                        <div class="uk-width-1-2@s uk-width-3-5@l">
+                        <div class="uk-width-1-2@m uk-width-3-5@l">
                             <div class="uk-text-center">
                                 <img src="images/truck-top.png" alt="truck">
                             </div>
@@ -904,7 +898,7 @@
         <!--Footer-->
         <footer class="footer uk-section uk-section-small uk-background-secondary uk-light">
             <div class="uk-container">
-                <div class="uk-margin uk-flex uk-flex-center uk-visible@s">
+                <div class="uk-margin uk-flex uk-flex-center uk-visible@m">
 
                     <ul class="uk-subnav uk-margin-remove">
                         <li class="uk-active"><a href="#">Главная</a></li>
@@ -978,7 +972,7 @@
                         </a>
                     </div>
                     <div>
-                        <div class="uk-text-small">© 2019 copyright Все права защищены</div>
+                        <div class="uk-text-small uk-text-center">© 2019 copyright Все права защищены</div>
                     </div>
                 </div>
             </div>
@@ -1061,14 +1055,10 @@
             <button class="uk-offcanvas-close" type="button" uk-close></button>
 
             <div class="uk-card uk-flex uk-flex-center">
-                <div uk-margin="margin: uk-margin-top">
+                <div uk-margin>
 
-                    <div class="uk-hidden@l">
-                        <a href="#form-call-reverse" class="uk-button uk-button-primary" uk-toggle>Заказать эвакуатор</a>
-                    </div>
-
-                    <div class="uk-hidden@m">
-                        <a href="tel:+71234567890" class="uk-flex-last@l">+7 123 456 78 90</a>
+                    <div>
+                        <a href="#form-call-reverse" class="uk-button uk-button-small uk-button-secondary" uk-toggle>Заказать эвакуатор</a>
                     </div>
 
                     <ul class="uk-nav">
@@ -1099,6 +1089,27 @@
                         </li>
                         <li>
                             <a href="#">Пункт меню</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#">Пункт меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Пункт меню</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#">Пункт меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                    <li><a href="#">Пункт выпадающего меню</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <a href="#">Пункт меню</a>

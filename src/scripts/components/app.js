@@ -9,58 +9,8 @@ $(document).ready(function () {
 
         /*const $mapInfo = $mapWrapper.find('.map__info');
         const $mapInfoList = $mapInfo.find('.map__list');*/
-        const placemarksData = [
-            {
-                title: 'Адрес сервиса',
-                coords: [55.7385,37.4821],
-                hintContent: 'Сервис!'
-            },
-            {
-                title: 'Адрес сервиса',
-                coords: [55.7129,37.4855],
-                hintContent: 'Сервис!'
-            },
-            {
-                title: 'Адрес сервиса',
-                coords: [55.7323,37.5447],
-                hintContent: 'Сервис!'
-            },
-            {
-                title: 'Адрес сервиса',
-                coords: [55.7012,37.5568],
-                hintContent: 'Сервис!'
-            },
-            {
-                title: 'Адрес сервиса',
-                coords: [55.7181,37.5732],
-                hintContent: 'Сервис!'
-            },
-            {
-                title: 'Адрес сервиса',
-                coords: [55.7225,37.6090],
-                hintContent: 'Сервис!'
-            },
-            {
-                title: 'Адрес сервиса',
-                coords: [55.7193,37.6467],
-                hintContent: 'Сервис!'
-            },
-            {
-                title: 'Адрес сервиса',
-                coords: [55.7025,37.6695],
-                hintContent: 'Сервис!'
-            },
-            {
-                title: 'Адрес сервиса',
-                coords: [55.7378,37.6953],
-                hintContent: 'Сервис!'
-            },
-            {
-                title: 'Адрес сервиса',
-                coords: [55.7253,37.7431],
-                hintContent: 'Сервис!'
-            }
-        ];
+        const $map = $('#map');
+        const placemarksData = $map.attr('data-services') && JSON.parse($map.attr('data-services'));
 
         const $firstScript = $('script').eq(0);
         const script = document.createElement('script');
