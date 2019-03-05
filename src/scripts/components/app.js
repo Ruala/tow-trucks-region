@@ -1,6 +1,19 @@
 $(document).ready(function () {
     'use strict';
 
+    /*Is mobile*/
+    (function () {
+        if (!isMobileDevice()) {
+            return;
+        }
+
+        $('body').addClass('is-mobile');
+
+        function isMobileDevice() {
+            return 'orientation' in window || navigator.userAgent.indexOf('IEMobile') !== -1;
+        }
+    })();
+
     /*Yandex map*/
     (function(){
         const $mapWrapper = $('.map-wrapper');
@@ -36,11 +49,15 @@ $(document).ready(function () {
             for (const placemarkData of placemarksData) {
                 const placemark = new ymaps.Placemark(placemarkData.coords, {
                         hintContent: placemarkData.hintContent,
-                        balloonContent: '<div>\n' +
-                            '                <div><b>Тип эвакуатора</b></div>\n' +
-                            '                <div class="uk-margin-small-bottom">+7 (777) 77-77-77</div>\n' +
+                        balloonContent: '<div class="uk-text-center">\n' +
+                            '                <div class="uk-margin-small-bottom">\n' +
+                            '                    <div class="uk-visible@s"><b>Hyundai HD78, 4.0т.</b></div>\n' +
+                            '                    <div><b>сдвижная платформа</b></div>\n' +
+                            '                    <div>+7 (777) 77-77-77</div>\n' +
+                            '                </div>\n' +
                             '                <div>\n' +
-                            '                    <a href="#form-call-reverse" class="uk-button uk-button-small uk-button-primary" uk-toggle>Заказать</a>\n' +
+                            '                    <a href="#form-call-reverse" class="js-button-toggle uk-button uk-button-small uk-button-primary" uk-toggle>Заказать</a>\n' +
+                            '                    <a href="tel:+7777777777" class="js-button-call uk-button uk-button-small uk-button-primary">Позвонить</a>\n' +
                             '                </div>\n' +
                             '            </div>'
                     },
@@ -50,6 +67,7 @@ $(document).ready(function () {
                         iconImageSize: [30, 21],
                         iconImageOffset: [-15, -10]
                     });
+
                 /*const $li = $(`<li>${placemarkData.title}</li>`);*/
 
                 /*$mapInfoList.append($li);
